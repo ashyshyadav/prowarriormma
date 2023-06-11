@@ -7896,3 +7896,10 @@ del {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.gallery_photo{
+
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
