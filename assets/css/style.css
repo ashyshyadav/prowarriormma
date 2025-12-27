@@ -465,6 +465,12 @@ hr {
 .owl-carousel .owl-nav div.owl-next {
   left: auto;
   right: -30px;
+  background: none;
+}
+
+.owl-carousel .owl-nav div.owl-prev {
+  left: -30px;
+  background: none;
 }
 
 /* line 215, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
@@ -490,7 +496,6 @@ hr {
 /* line 235, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
 .owl-carousel:hover .owl-nav div:hover {
   color: #fff;
-  background: #ff3500;
 }
 
 /* line 244, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
