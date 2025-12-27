@@ -205,9 +205,31 @@
 // 15. Time Picker
   $('#timepicker').timepicker();
 
+
 //16. Overlay
   $(".snake").snakeify({
     speed: 200
   });
+
+// Branch slider (Owl Carousel)
+  if ($('.branch-slider').length) {
+    $('.branch-slider').owlCarousel({
+      items: 1,
+      loop: false,
+      margin: 20,
+      nav: true,
+      dots: true,
+      autoplay: false,
+      responsive: {
+        0: { items: 1 },
+        600: { items: 1 },
+        1000: { items: 1 }
+      },
+      navText: [
+        '<i class="fas fa-chevron-left"></i>',
+        '<i class="fas fa-chevron-right"></i>'
+      ]
+    });
+  }
 
 })(jQuery);
