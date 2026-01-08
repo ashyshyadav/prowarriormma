@@ -79,10 +79,7 @@ section {
     text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
     letter-spacing: 2px;
     animation: fadeInScale 1s ease-out;
-    background: linear-gradient(45deg, #fff, #f4c430);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #fff;
 }
 
 .hero__caption span {
