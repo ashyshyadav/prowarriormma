@@ -28,6 +28,50 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+    <style>
+        /* Fix video popup and mobile overflow */
+        body {
+            overflow-x: hidden;
+        }
+        
+        .video-area {
+            overflow: hidden;
+        }
+        
+        .video-wrap {
+            overflow: visible;
+        }
+        
+        /* Ensure video icon is clickable */
+        .video-icon {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .video-icon a {
+            cursor: pointer;
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Mobile overflow fixes */
+        @media (max-width: 767px) {
+            .container-fluid,
+            .container {
+                overflow-x: hidden;
+            }
+            
+            .row {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+            
+            .video-area {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body class="black-bg">
@@ -173,11 +217,6 @@
                                     <!-- <li><a href="pricing.html">Pricing</a></li> -->
                                     <li><a href="gallery.html">Gallery</a></li>
                                     <!-- <li><a href="blog.html">Blog</a> -->
-                                    <ul class="submenu">
-                                        <!-- <li><a href="blog.html">Blog</a> --></li>
-                                        <li><a href="blog_details.html">Blog Details</a></li>
-                                        <li><a href="elements.html">Elements</a></li>
-                                    </ul>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
@@ -917,7 +956,7 @@
                 <div class="video-wrap position-relative">
                     <div class="video-icon">
                         <a class="popup-video btn-icon"
-                            href="https://www.youtube.com/watch?v=kUBi9nmGsrs&pp=0gcJCU0KAYcqIYzv"><i
+                            href="https://www.youtube.com/watch?v=kUBi9nmGsrs"><i
                                 class="fas fa-play"></i></a>
                     </div>
                 </div>

@@ -1,0 +1,35 @@
+/* Video Section Fixes */
+.video-area {
+  overflow: hidden;
+  position: relative;
+}
+
+.video-wrap {
+  overflow: hidden;
+}
+
+/* Mobile overflow fix */
+@media (max-width: 767px) {
+  .video-area {
+    overflow-x: hidden;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  .container {
+    overflow-x: hidden;
+  }
+}
+
+/* Video icon positioning fix */
+.video-icon {
+  position: relative;
+  text-align: center;
+}
+
+.video-icon a {
+  position: relative;
+  z-index: 10;
+}
