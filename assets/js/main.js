@@ -159,10 +159,29 @@
       nice_Select.niceSelect();
     }
 
-/* 7. data-background */
+/* 7. data-background (lazy load)
+       setup a lazy loader that only sets the CSS background when the element
+       enters the viewport; falls back to immediate load if IntersectionObserver
+       is unavailable */
     $("[data-background]").each(function () {
-      $(this).css("background-image", "url(" + $(this).attr("data-background") + ")")
-      });
+      var $elem = $(this);
+      var url = $elem.attr("data-background");
+      if (!url) return;
+      if ("IntersectionObserver" in window) {
+        var observer = new IntersectionObserver(function(entries, obs) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              $elem.css("background-image", "url(" + url + ")");
+              obs.unobserve(entry.target);
+            }
+          });
+        });
+        observer.observe(this);
+      } else {
+        // fallback for older browsers
+        $elem.css("background-image", "url(" + url + ")");
+      }
+    });
 
 
 /* 10. WOW active */

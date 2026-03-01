@@ -3405,7 +3405,7 @@ hr {
   margin-top: -1px;
   background-image: url(../img/hero/h1_hero.png);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: 0 20%;
   background-size: cover;
   background-attachment: fixed;
 }
