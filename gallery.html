@@ -44,6 +44,48 @@
         #preloader-active {
             display: none !important;
         }
+
+        /* Remove gallery overlay hover effect */
+        .box .overlay {
+            display: none !important;
+        }
+
+        /* Magnific Popup Close Button Styling */
+        .mfp-close {
+            width: 50px !important;
+            height: 50px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            color: #f4c430 !important;
+            background: rgba(0, 0, 0, 0.8) !important;
+            border-radius: 50% !important;
+            top: 20px !important;
+            right: 20px !important;
+            opacity: 1 !important;
+            transition: all 0.3s ease !important;
+            padding: 0 !important;
+            line-height: 1 !important;
+            font-size: 28px !important;
+            cursor: pointer !important;
+        }
+
+        .mfp-close:hover {
+            background: #f4c430 !important;
+            color: #000 !important;
+            transform: scale(1.1) !important;
+            cursor: pointer !important;
+        }
+
+        @media (max-width: 767px) {
+            .mfp-close {
+                width: 45px !important;
+                height: 45px !important;
+                font-size: 24px !important;
+                top: 15px !important;
+                right: 15px !important;
+            }
+        }
     </style>
     <header>
         <!-- Header Start -->

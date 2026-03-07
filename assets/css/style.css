@@ -3407,7 +3407,13 @@ hr {
   background-repeat: no-repeat;
   background-position: 0 20%;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .slider-area {
+    background-attachment: scroll !important;
+  }
 }
 
 /* line 44, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */

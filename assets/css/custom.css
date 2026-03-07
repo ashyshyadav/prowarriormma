@@ -427,9 +427,17 @@ section {
 
 /* Parallax Effect */
 .video-area {
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     background-position: center;
+}
+
+/* iOS Safari Fix for background-attachment */
+@supports (-webkit-touch-callout: none) {
+    .video-area,
+    .slider-area {
+        background-attachment: scroll !important;
+    }
 }
 
 /* Smooth Page Transitions */
