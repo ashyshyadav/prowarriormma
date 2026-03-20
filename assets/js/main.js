@@ -195,7 +195,23 @@
 
 
 // 12 Pop Up Img
-    var popUp = $('.single_gallery_part, .img-pop-up');
+    // Initialize each branch gallery as its own popup group so swapping tabs
+    // does not merge hidden/visible images into one slider sequence.
+    $('.branch-gallery').each(function () {
+      var $gallery = $(this);
+      if ($gallery.length) {
+        $gallery.magnificPopup({
+          delegate: '.img-pop-up',
+          type: 'image',
+          gallery: {
+            enabled: true
+          }
+        });
+      }
+    });
+
+    // Fallback for other standalone image popups outside branch-gallery.
+    var popUp = $('.single_gallery_part, .img-pop-up').not('.branch-gallery .img-pop-up');
       if(popUp.length){
         popUp.magnificPopup({
           type: 'image',
