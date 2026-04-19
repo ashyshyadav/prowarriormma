@@ -14,11 +14,12 @@
     overflow-x: hidden;
   }
   
-  body {
+  html, body {
     overflow-x: hidden;
+    max-width: 100vw;
   }
   
-  .container {
+  .container, .container-fluid {
     overflow-x: hidden;
   }
 }

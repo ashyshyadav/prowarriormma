@@ -469,6 +469,38 @@ body {
     100% { transform: rotate(360deg); }
 }
 
+/* ===== Mobile Overflow Fix ===== */
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+.slider-area,
+.gallery-area,
+.health-benefits-area,
+.team-area,
+.about-area2,
+.video-area,
+.services-area,
+.footer-area {
+    overflow-x: hidden;
+}
+
+/* Owl carousel nav arrows can poke outside the viewport */
+.owl-carousel .owl-nav div.owl-next,
+.owl-carousel .owl-nav div.owl-prev {
+    /* keep them inside the container on small screens */
+}
+
+@media (max-width: 991px) {
+    .owl-carousel .owl-nav div.owl-next {
+        right: 10px;
+    }
+    .owl-carousel .owl-nav div.owl-prev {
+        left: 10px;
+    }
+}
+
 /* Mobile Responsive */
 @media (max-width: 767px) {
     .single-services {
@@ -477,6 +509,7 @@ body {
     
     .hero__caption h1 {
         font-size: 42px;
+        word-break: break-word;
     }
     
     .section-tittle h2 {
@@ -494,6 +527,42 @@ body {
     .about-area2 .section-tittle2 {
         padding-left: 0 !important;
         margin-top: 30px;
+    }
+
+    /* Prevent gallery container-fluid from causing overflow */
+    .gallery-area .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Tame the slider hero text */
+    .slider-area .hero__caption span {
+        font-size: 28px;
+    }
+
+    .slider-area .hero__caption h1 {
+        font-size: 36px !important;
+        line-height: 1.3 !important;
+    }
+
+    /* Keep row gutters from poking out */
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .row > [class*="col-"] {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .slider-area .hero__caption h1 {
+        font-size: 30px !important;
+    }
+
+    .slider-area .hero__caption span {
+        font-size: 22px !important;
     }
 }
 
