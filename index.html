@@ -870,6 +870,38 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                            <div class="box snake mb-30">
+                                <a class="img-pop-up" href="assets/img/gallery/kurla_bags.jpg">
+                                    <div class="gallery-img big-img">
+                                        <img loading="lazy" decoding="async" src="assets/img/gallery/kurla_bags.jpg"
+                                            alt="Kurla Gym - Punching Bags">
+                                        <div class="overlay">
+                                            <div class="overlay-content">
+                                                <h3>Punching Bags</h3>
+                                                <i class="ti-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                            <div class="box snake mb-30">
+                                <a class="img-pop-up" href="assets/img/gallery/kurla_weights.jpg">
+                                    <div class="gallery-img big-img">
+                                        <img loading="lazy" decoding="async" src="assets/img/gallery/kurla_weights.jpg"
+                                            alt="Kurla Gym - Weight Training">
+                                        <div class="overlay">
+                                            <div class="overlay-content">
+                                                <h3>Weight Training</h3>
+                                                <i class="ti-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="chembur-gallery" class="branch-gallery">
@@ -1341,66 +1373,153 @@
         </style>
         <!-- Schedule Area End -->
         <!-- ? services-area (Our Branches) -->
+        <style>
+            .branch-card {
+                background: #181818;
+                border-radius: 15px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+                padding: 40px 35px;
+                border: 1px solid #2a2a2a;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+            .branch-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 35px rgba(244,196,48,0.15);
+                border-color: rgba(244,196,48,0.3);
+            }
+            .branch-card .branch-icon {
+                font-size: 48px;
+                color: #f4c430;
+                margin-bottom: 18px;
+            }
+            .branch-card h4 {
+                color: #f4c430;
+                font-weight: 700;
+                font-size: 22px;
+                letter-spacing: 1px;
+                margin-bottom: 14px;
+            }
+            .branch-card .branch-address {
+                color: #c0c0c0;
+                font-size: 15px;
+                line-height: 1.8;
+                flex-grow: 1;
+                margin-bottom: 22px;
+            }
+            .branch-card .branch-divider {
+                border: none;
+                border-top: 1px solid #333;
+                margin: 0 0 22px;
+            }
+            .branch-card .branch-contact-row {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                margin-bottom: 14px;
+                flex-wrap: wrap;
+            }
+            .branch-card .branch-contact-row a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 17px;
+                font-weight: 600;
+                transition: color 0.2s;
+            }
+            .branch-card .branch-contact-row a:hover {
+                color: #f4c430;
+            }
+            .branch-card .branch-email-row {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+            .branch-card .branch-email-row a {
+                text-decoration: none;
+                color: #f4c430;
+                font-size: 15px;
+                font-weight: 600;
+                word-break: break-all;
+                transition: opacity 0.2s;
+            }
+            .branch-card .branch-email-row a:hover {
+                opacity: 0.8;
+            }
+            @media (max-width: 767px) {
+                .branch-card {
+                    padding: 30px 24px;
+                    margin-bottom: 20px;
+                }
+                .branch-card h4 {
+                    font-size: 20px;
+                }
+                .branch-card .branch-address {
+                    font-size: 14px;
+                }
+                .branch-card .branch-contact-row a {
+                    font-size: 16px;
+                }
+            }
+        </style>
         <section class="services-area" style="padding: 80px 0;">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-10 col-lg-12">
-                        <h3
-                            style="color: #fff; margin-bottom: 40px; font-size: 28px; letter-spacing: 2px; text-transform: uppercase; text-align: center;">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s"
+                            style="color: #fff; margin-bottom: 50px; font-size: 28px; letter-spacing: 2px; text-transform: uppercase; text-align: center;">
                             Our Branches</h3>
-                        <div class="owl-carousel branch-slider" style="margin-bottom: 50px;">
-                            <div class="branch-slide"
-                                style="background: #181818; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); padding: 40px; margin: 10px;">
-                                <div style="text-align: center;">
-                                    <i class="fas fa-map-marker-alt"
-                                        style="font-size: 50px; color: #f4c430; margin-bottom: 20px;"></i>
-                                    <h4
-                                        style="color: #f4c430; font-weight: 700; font-size: 24px; letter-spacing: 1px; margin-bottom: 15px;">
-                                        Kurla Branch</h4>
-                                    <p
-                                        style="color: #d0d0d0; font-size: 16px; line-height: 1.8; margin-bottom: 20px; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                        Above bata showroom, Akash Lane, Kurla Station Rd, near Kurla station, Kurla
-                                        West, Mumbai, Maharashtra 400070</p>
-                                    <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #333;">
-                                        <a href="tel:+919702575775"
-                                            style="text-decoration: none; display: inline-block; transition: transform 0.2s;">
-                                            <i class="fas fa-phone" style="color: #f4c430; margin-right: 10px;"></i>
-                                            <span
-                                                style="color: #fff; font-size: 18px; font-weight: 600;">+91-9702575775</span>
-                                        </a>
-                                    </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <!-- Kurla Branch Card -->
+                    <div class="col-lg-6 col-md-10 col-12 mb-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="branch-card text-center">
+                            <div>
+                                <i class="fas fa-map-marker-alt branch-icon"></i>
+                                <h4>Kurla Branch</h4>
+                                <p class="branch-address">
+                                    Above Bata Showroom, Akash Lane,<br>
+                                    Kurla Station Rd, near Kurla Station,<br>
+                                    Kurla West, Mumbai, Maharashtra 400070
+                                </p>
+                                <hr class="branch-divider">
+                                <div class="branch-contact-row">
+                                    <i class="fas fa-phone" style="color: #f4c430;"></i>
+                                    <a href="tel:+919702575775">+91-9702575775</a>
                                 </div>
-                            </div>
-                            <div class="branch-slide"
-                                style="background: #181818; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); padding: 40px; margin: 10px;">
-                                <div style="text-align: center;">
-                                    <i class="fas fa-map-marker-alt"
-                                        style="font-size: 50px; color: #f4c430; margin-bottom: 20px;"></i>
-                                    <h4
-                                        style="color: #f4c430; font-weight: 700; font-size: 24px; letter-spacing: 1px; margin-bottom: 15px;">
-                                        Chembur Branch</h4>
-                                    <p
-                                        style="color: #d0d0d0; font-size: 16px; line-height: 1.8; margin-bottom: 20px; max-width: 500px; margin-left: auto; margin-right: auto;">
-                                        4th Floor Cinema Building, Above HDFC Bank, Sion Trombay Road, Chembur Naka,
-                                        Opposite Petrol Pump, Chembur East, Mumbai 400071</p>
-                                    <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #333;">
-                                        <a href="tel:+917506743526"
-                                            style="text-decoration: none; display: inline-block; transition: transform 0.2s;">
-                                            <i class="fas fa-phone" style="color: #f4c430; margin-right: 10px;"></i>
-                                            <span
-                                                style="color: #fff; font-size: 18px; font-weight: 600;">+91-7506743526</span>
-                                        </a>
-                                    </div>
+                                <div class="branch-email-row">
+                                    <i class="fas fa-envelope" style="color: #f4c430; font-size: 14px;"></i>
+                                    <a href="mailto:prowarriormma@gmail.com">prowarriormma@gmail.com</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"
-                            style="background: #181818; border-radius: 15px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-                            <i class="fas fa-envelope"
-                                style="font-size: 50px; color: #f4c430; margin-bottom: 15px;"></i>
-                            <h4 style="color: #fff; margin-bottom: 10px; font-size: 22px;">Email Us</h4>
-                            <p style="color: #f4c430; font-size: 18px; margin: 0; font-weight: 600;">
-                                prowarriormma@gmail.com</p>
+                    </div>
+                    <!-- Chembur Branch Card -->
+                    <div class="col-lg-6 col-md-10 col-12 mb-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".35s">
+                        <div class="branch-card text-center">
+                            <div>
+                                <i class="fas fa-map-marker-alt branch-icon"></i>
+                                <h4>Chembur Branch</h4>
+                                <p class="branch-address">
+                                    4th Floor Cinema Building, Above HDFC Bank,<br>
+                                    Sion Trombay Road, Chembur Naka,<br>
+                                    Opposite Petrol Pump, Chembur East, Mumbai 400071
+                                </p>
+                                <hr class="branch-divider">
+                                <div class="branch-contact-row">
+                                    <i class="fas fa-phone" style="color: #f4c430;"></i>
+                                    <a href="tel:+917506743526">+91-7506743526</a>
+                                </div>
+                                <div class="branch-email-row">
+                                    <i class="fas fa-envelope" style="color: #f4c430; font-size: 14px;"></i>
+                                    <a href="mailto:prowarriormma@gmail.com">prowarriormma@gmail.com</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
